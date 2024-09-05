@@ -32,7 +32,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: ${{values.owner | dump}}
+  owner: bellayin
   system: coolstore-${{values.namespace_raw}}
   providesApis:
     - ${{values.component_id }}-api
@@ -45,7 +45,7 @@ metadata:
     - coolstore
     - demo
 spec:
-  owner: ${{values.owner | dump}}
+  owner: bellayin
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
@@ -57,7 +57,7 @@ metadata:
 spec:
   type: openapi
   lifecycle: production
-  owner: ${{values.owner | dump}}
+  owner: bellayin
   system: coolstore-${{values.namespace_raw}}
   definition:
     $text: ./openapi.yaml
