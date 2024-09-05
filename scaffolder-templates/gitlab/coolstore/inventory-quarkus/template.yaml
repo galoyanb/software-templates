@@ -11,7 +11,7 @@ metadata:
     - quarkus
     - maven
 spec:
-  owner: rhdh
+  owner: bellayin
   type: service
   parameters:
     - title: Provide Information for Application
