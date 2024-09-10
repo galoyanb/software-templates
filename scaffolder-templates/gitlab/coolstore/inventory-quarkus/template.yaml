@@ -194,8 +194,8 @@ spec:
       action: argocd:create-resources
       input:
         appName: ${{ parameters.namespace }}-${{ parameters.application_id }}-bootstrap
-        argoInstance: main
-        namespace: janus-argocd
+        argoInstance: argocd-server
+        namespace: bellayin
         repoUrl: https://${{ parameters.repo.host }}/${{ parameters.repo.owner }}/${{ parameters.namespace }}-${{ parameters.application_id }}-gitops.git
         path: 'argocd/'
 
